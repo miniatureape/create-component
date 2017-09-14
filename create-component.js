@@ -23,7 +23,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {};
 }
-export default connect(mapStateToProps, mapDispatchToProps)($(className))`
+export default connect(mapStateToProps, mapDispatchToProps)(${className})`
 }
 
 
