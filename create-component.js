@@ -5,27 +5,25 @@ const fs = require('fs');
 
 let componentTemplate = function(className) { 
     return `import React from 'react';
-    import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-    export default class ${className} {
-        render() {
-            return ();
-        }
+export default class ${className} {
+    render() {
+        return ();
     }
-    $(className).propTypes = {};`
+}
+${className}.propTypes = {};`
 }
 
 let containerTemplate = function(className) { 
     return `import connect from 'react-redux';
-
-    function mapStateToProps(state) {
-        return state;
-    }
-    function mapDispatchToProps(dispatch) {
-        return {};
-    }
-    export default connect(mapStateToProps, mapDispatchToProps)($(className))
-    `
+function mapStateToProps(state) {
+    return state;
+}
+function mapDispatchToProps(dispatch) {
+    return {};
+}
+export default connect(mapStateToProps, mapDispatchToProps)($(className))`
 }
 
 
