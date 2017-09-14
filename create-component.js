@@ -16,7 +16,8 @@ ${className}.propTypes = {};`
 }
 
 let containerTemplate = function(className) { 
-    return `import connect from 'react-redux';
+    return `import { connect } from 'react-redux';
+import ${className} from '../components/${className}'
 function mapStateToProps(state) {
     return state;
 }
