@@ -7,12 +7,13 @@ let componentTemplate = function(className) {
     return `import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class ${className} {
+class ${className} {
     render() {
         return ();
     }
 }
 ${className}.propTypes = {};`
+export default ${className};
 }
 
 let containerTemplate = function(className) { 
