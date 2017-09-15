@@ -12,8 +12,8 @@ class ${className} extends React.Component {
         return ();
     }
 }
-${className}.propTypes = {};`
-export default ${className};
+${className}.propTypes = {};
+export default ${className};`
 }
 
 let containerTemplate = function(className) { 
