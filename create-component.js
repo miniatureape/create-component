@@ -9,7 +9,9 @@ import PropTypes from 'prop-types';
 
 class ${className} extends React.Component {
     render() {
-        return ();
+        return (
+            <div>Hello, ${className}</div>
+        );
     }
 }
 ${className}.propTypes = {};
